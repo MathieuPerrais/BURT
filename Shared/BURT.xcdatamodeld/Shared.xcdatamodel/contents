@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D75" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Market" representedClassName=".Market" syncable="YES">
+        <attribute name="code" attributeType="String" defaultValueString=""/>
+        <attribute name="flag" attributeType="String" defaultValueString=""/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <relationship name="app" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoreApp" inverseName="markets" inverseEntity="StoreApp"/>
+        <relationship name="reviews" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Review" inverseName="market" inverseEntity="Review"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="code"/>
+                <constraint value="app"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Review" representedClassName=".Review" syncable="YES">
+        <attribute name="author" attributeType="String" defaultValueString=""/>
+        <attribute name="content" attributeType="String" defaultValueString=""/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="link" optional="YES" attributeType="URI"/>
+        <attribute name="rating" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String" defaultValueString=""/>
+        <attribute name="version" attributeType="String" defaultValueString=""/>
+        <relationship name="market" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Market" inverseName="reviews" inverseEntity="Market"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="StoreApp" representedClassName=".StoreApp" syncable="YES">
+        <attribute name="averageRating" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="icon" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <attribute name="ratingCount" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="storeDescription" attributeType="String" defaultValueString=""/>
+        <attribute name="version" attributeType="String" defaultValueString=""/>
+        <relationship name="markets" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Market" inverseName="app" inverseEntity="Market"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Market" positionX="-25.12109375" positionY="-368.5859375" width="128" height="104"/>
+        <element name="Review" positionX="266.390625" positionY="-381.390625" width="128" height="163"/>
+        <element name="StoreApp" positionX="-272.4609375" positionY="-458.609375" width="128" height="149"/>
+    </elements>
+</model>

@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Envol",
+        "repositoryURL": "https://github.com/MathieuPerrais/Envol.git",
+        "state": {
+          "branch": null,
+          "revision": "0ec92c5d71cfede4cca136ed8c8e4484363872c3",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "SwiftTools",
+        "repositoryURL": "https://github.com/MathieuPerrais/SwiftTools.git",
+        "state": {
+          "branch": null,
+          "revision": "16b09e320ab7289d22051efcf828abc2b1835c56",
+          "version": "0.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
