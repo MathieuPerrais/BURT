@@ -77,7 +77,10 @@ struct StoreAppCell: View {
     
     var body: some View {
         NavigationLink(destination: MarketListView(storeApp: storeApp)) {
+            VStack(alignment: .leading) {
                 Text(storeApp.name)
+                StarRatingView(rating: Float(truncating: storeApp.averageRating))
+            }
         }
     }
 }

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D75" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
     <entity name="Market" representedClassName=".Market" syncable="YES">
+        <attribute name="averageRating" optional="YES" attributeType="Float" usesScalarValueType="YES"/>
         <attribute name="code" attributeType="String" defaultValueString=""/>
         <attribute name="flag" attributeType="String" defaultValueString=""/>
+        <attribute name="lastRatingRefresh" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="name" attributeType="String" defaultValueString=""/>
         <relationship name="app" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoreApp" inverseName="markets" inverseEntity="StoreApp"/>
         <relationship name="reviews" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Review" inverseName="market" inverseEntity="Review"/>
@@ -44,7 +46,7 @@
         </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="Market" positionX="-25.12109375" positionY="-368.5859375" width="128" height="104"/>
+        <element name="Market" positionX="-25.12109375" positionY="-368.5859375" width="128" height="134"/>
         <element name="Review" positionX="266.390625" positionY="-381.390625" width="128" height="163"/>
         <element name="StoreApp" positionX="-272.4609375" positionY="-458.609375" width="128" height="149"/>
     </elements>

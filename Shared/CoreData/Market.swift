@@ -20,6 +20,8 @@ public class Market: NSManagedObject {
     @NSManaged public var code: String
     @NSManaged public var name: String
     @NSManaged public var flag: String
+    @NSManaged public var averageRating: NSDecimalNumber?
+    @NSManaged public var lastRatingRefresh: Date?
     @NSManaged public var app: StoreApp
     @NSManaged public var reviews: Set<Review>
 }

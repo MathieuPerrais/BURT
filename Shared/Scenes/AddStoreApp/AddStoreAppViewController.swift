@@ -139,7 +139,7 @@ final class AddStoreAppViewController: UIViewController {
         networkToken?.cancel()
         
         guard let text = idField.text, let appId = Int64(text) else {
-            loggerUI.error("App ID input not convertible to Int (current: \(self.idField.text ?? "")")
+            loggerUI.error("App ID input not convertible to Int (current: \(self.idField.text ?? ""))")
             return
         }
         
