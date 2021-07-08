@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
     <entity name="Market" representedClassName=".Market" syncable="YES">
         <attribute name="averageRating" optional="YES" attributeType="Float" usesScalarValueType="YES"/>
         <attribute name="code" attributeType="String" defaultValueString=""/>
@@ -19,9 +19,14 @@
         <attribute name="author" attributeType="String" defaultValueString=""/>
         <attribute name="content" attributeType="String" defaultValueString=""/>
         <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="language" optional="YES" attributeType="String"/>
         <attribute name="link" optional="YES" attributeType="URI"/>
         <attribute name="rating" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sentiment" optional="YES" attributeType="String"/>
         <attribute name="title" attributeType="String" defaultValueString=""/>
+        <attribute name="translated" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="translatedContent" optional="YES" attributeType="String"/>
+        <attribute name="translatedTitle" optional="YES" attributeType="String"/>
         <attribute name="version" attributeType="String" defaultValueString=""/>
         <relationship name="market" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Market" inverseName="reviews" inverseEntity="Market"/>
         <uniquenessConstraints>
@@ -47,7 +52,7 @@
     </entity>
     <elements>
         <element name="Market" positionX="-25.12109375" positionY="-368.5859375" width="128" height="134"/>
-        <element name="Review" positionX="266.390625" positionY="-381.390625" width="128" height="163"/>
+        <element name="Review" positionX="266.390625" positionY="-381.390625" width="128" height="224"/>
         <element name="StoreApp" positionX="-272.4609375" positionY="-458.609375" width="128" height="149"/>
     </elements>
 </model>
