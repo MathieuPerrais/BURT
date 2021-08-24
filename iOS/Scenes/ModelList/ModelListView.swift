@@ -11,15 +11,15 @@ struct ModelListView: View {
     
     @Binding var showView: Bool
     
-    var translationRepository: TranslationRepository = TranslationRepository()
+//    var translationRepository: TranslationRepository = TranslationRepository()
     
     var body: some View {
         VStack {
             List {
-                ForEach(translationRepository.listDownloadedTranslateModels().sorted(by: {$0.language.rawValue > $1.language.rawValue })) { model in
+//                ForEach(translationRepository.listDownloadedTranslateModels().sorted(by: {$0.language.rawValue > $1.language.rawValue })) { model in
                     //                ReviewCell(review: review)
-                    Text(model.language.rawValue)
-                }
+//                    Text(model.language.rawValue)
+//                }
             }
             
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {

@@ -18,7 +18,6 @@ struct BURTApp: App {
     init(){
         UITableView.appearance().backgroundColor = .clear
         UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont(name: "BalooTamma-Regular", size: 35)!]
-
         UINavigationBar.appearance().titleTextAttributes = [.font : UIFont(name: "BalooTamma-Regular", size: 20)!]
     }
 

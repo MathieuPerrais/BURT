@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6542316D76F732481585425E /* Pods_BURT__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00061D544174619F01E71B1F /* Pods_BURT__iOS_.framework */; };
+		F00AC1B426D0920900B7430B /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = F00AC1B326D0920900B7430B /* SwiftPackageProductDependency */; };
 		F05CDDF625D7C130003F4D20 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05CDDF525D7C130003F4D20 /* Endpoints.swift */; };
 		F07B229E25E4D40800A21466 /* MarketName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07B229D25E4D40800A21466 /* MarketName.swift */; };
 		F07B22A525E4D44F00A21466 /* NSLocale+Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07B22A425E4D44F00A21466 /* NSLocale+Countries.swift */; };
@@ -44,7 +44,6 @@
 		F0B250D525F5A30A009B1358 /* AddStoreAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B250D425F5A30A009B1358 /* AddStoreAppView.swift */; };
 		F0B250E825F5B482009B1358 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = F0B250E725F5B482009B1358 /* SwiftPackageProductDependency */; };
 		F0B250EF25F5E15F009B1358 /* UIView+Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B250EE25F5E15F009B1358 /* UIView+Borders.swift */; };
-		F0C7598B25D50E5A009E2B38 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = F0C7598A25D50E5A009E2B38 /* SwiftPackageProductDependency */; };
 		F0C759E625D6645E009E2B38 /* ReviewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C759E525D6645E009E2B38 /* ReviewList.swift */; };
 		F0C759F625D66649009E2B38 /* ReviewDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C759F525D66649009E2B38 /* ReviewDetails.swift */; };
 /* End PBXBuildFile section */
@@ -60,9 +59,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00061D544174619F01E71B1F /* Pods_BURT__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BURT__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		20A74B9C7943F164C3CB2481 /* Pods-BURT (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BURT (iOS).release.xcconfig"; path = "Target Support Files/Pods-BURT (iOS)/Pods-BURT (iOS).release.xcconfig"; sourceTree = "<group>"; };
-		E42DF9D904D1E8102FEF66C7 /* Pods-BURT (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BURT (iOS).debug.xcconfig"; path = "Target Support Files/Pods-BURT (iOS)/Pods-BURT (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 		F05CDDF525D7C130003F4D20 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		F07B229D25E4D40800A21466 /* MarketName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketName.swift; sourceTree = "<group>"; };
 		F07B22A425E4D44F00A21466 /* NSLocale+Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLocale+Countries.swift"; sourceTree = "<group>"; };
@@ -111,9 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0C7598B25D50E5A009E2B38 /* BuildFile in Frameworks */,
 				F0B250E825F5B482009B1358 /* BuildFile in Frameworks */,
-				6542316D76F732481585425E /* Pods_BURT__iOS_.framework in Frameworks */,
+				F00AC1B426D0920900B7430B /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,23 +122,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		115134C7C73DDB98840991D1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E42DF9D904D1E8102FEF66C7 /* Pods-BURT (iOS).debug.xcconfig */,
-				20A74B9C7943F164C3CB2481 /* Pods-BURT (iOS).release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		F07B22AB25E4EC0000A21466 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				00061D544174619F01E71B1F /* Pods_BURT__iOS_.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		F08702F425DB576700F40676 /* APIModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,8 +170,6 @@
 				F08FB20725D5095F00340BFE /* iOS */,
 				F08FB22525D5096000340BFE /* Tests iOS */,
 				F08FB21325D5096000340BFE /* Products */,
-				F07B22AB25E4EC0000A21466 /* Frameworks */,
-				115134C7C73DDB98840991D1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -336,7 +312,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F08FB24025D5096000340BFE /* Build configuration list for PBXNativeTarget "BURT (iOS)" */;
 			buildPhases = (
-				7B842F9A21304018A9D80322 /* [CP] Check Pods Manifest.lock */,
 				F08FB20E25D5096000340BFE /* Sources */,
 				F08FB20F25D5096000340BFE /* Frameworks */,
 				F08FB21025D5096000340BFE /* Resources */,
@@ -347,8 +322,8 @@
 			);
 			name = "BURT (iOS)";
 			packageProductDependencies = (
-				F0C7598A25D50E5A009E2B38 /* SwiftPackageProductDependency */,
 				F0B250E725F5B482009B1358 /* SwiftPackageProductDependency */,
+				F00AC1B326D0920900B7430B /* SwiftPackageProductDependency */,
 			);
 			productName = "BURT (iOS)";
 			productReference = F08FB21225D5096000340BFE /* BURT.app */;
@@ -400,8 +375,8 @@
 			);
 			mainGroup = F08FB20225D5095E00340BFE;
 			packageReferences = (
-				F0C7598925D50E5A009E2B38 /* RemoteSwiftPackageReference */,
 				F0B250E625F5B482009B1358 /* RemoteSwiftPackageReference */,
+				F00AC1B226D0920900B7430B /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = F08FB21325D5096000340BFE /* Products */;
 			projectDirPath = "";
@@ -432,31 +407,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7B842F9A21304018A9D80322 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BURT (iOS)-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F08FB20E25D5096000340BFE /* Sources */ = {
@@ -631,7 +581,6 @@
 		};
 		F08FB24125D5096000340BFE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E42DF9D904D1E8102FEF66C7 /* Pods-BURT (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -654,7 +603,6 @@
 		};
 		F08FB24225D5096000340BFE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20A74B9C7943F164C3CB2481 /* Pods-BURT (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -754,6 +702,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F00AC1B226D0920900B7430B /* RemoteSwiftPackageReference */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MathieuPerrais/Envol.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 		F0B250E625F5B482009B1358 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -762,26 +718,18 @@
 				minimumVersion = 5.0.1;
 			};
 		};
-		F0C7598925D50E5A009E2B38 /* RemoteSwiftPackageReference */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/MathieuPerrais/Envol.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F00AC1B326D0920900B7430B /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F00AC1B226D0920900B7430B /* RemoteSwiftPackageReference */;
+			productName = Envol;
+		};
 		F0B250E725F5B482009B1358 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F0B250E625F5B482009B1358 /* RemoteSwiftPackageReference */;
 			productName = SnapKit;
-		};
-		F0C7598A25D50E5A009E2B38 /* SwiftPackageProductDependency */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F0C7598925D50E5A009E2B38 /* RemoteSwiftPackageReference */;
-			productName = Envol;
 		};
 /* End XCSwiftPackageProductDependency section */
 
